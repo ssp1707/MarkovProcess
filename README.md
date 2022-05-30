@@ -21,12 +21,23 @@ Assumptions for Markov Chain :
 
 ![image](https://user-images.githubusercontent.com/104613195/170175685-c6187523-f268-4a3b-b03d-8bbe62647a57.png)
 
+# Program :
+# Developed by
+# Register Number: 212220230043
+# Name: S. Sanjna Priya
 
-
-# Program
-
-
-
+import numpy as np
+P0=[0.3,0.2,0.5]
+P=[[0,2/3,1/3],[1/2,0,1/2],[1/2,1/2,0]]
+n=8
+for i in range(1,n+1):
+    P0=np.multiply(P0,P)
+    print("\nThe %d - step probability distribution is\n"%i)
+    print(P0)
 
 # Results and Output : 
+![5 1](https://user-images.githubusercontent.com/75234965/170946557-e494c876-300c-4cd8-9351-d8d5800e3238.PNG)
 
+![5 2](https://user-images.githubusercontent.com/75234965/170946648-e0e2231c-2dda-4766-9eef-f99af4083dcc.PNG)
+
+n-th step probability distribution matrix of the three state Markov process was claculated for given transition probability matrix.
